@@ -1,6 +1,7 @@
 plugins {
    id 'java'
    id 'application'
+   id 'checkstyle'
    id 'org.ajoberstar.git-publish' version '4.2.0'
 }
 
@@ -28,6 +29,11 @@ tasks.withType(Test) {
         }
 }
 
+checkstyle {
+    toolVersion = '10.12.5'
+    ignoreFailures = true
+}
+
 application { //Allows  ./gradlew run --args=path-to-test-data
     mainClass = 'edu.odu.cs.MostCommonWords'
 }
@@ -35,6 +41,7 @@ application { //Allows  ./gradlew run --args=path-to-test-data
 tasks.register('reports') {
     dependsOn 'build'
     dependsOn 'javadoc'
+    dependsOn 'checkstyleMain'
 
     doLast {
         copy {
@@ -44,6 +51,11 @@ tasks.register('reports') {
 
         copy {
             from 'build/docs/'
+            into 'build/reports/'
+        }
+
+        copy {
+            from 'build/reports/checkstyle/main.html'
             into 'build/reports/'
         }
     }
