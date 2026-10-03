@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.12.5">
+<file name="/home/runner/work/CS351--ciAsst--ryanmf2/CS351--ciAsst--ryanmf2/src/test/java/TestCIAsst.java">
+<error line="1" column="47" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/home/runner/work/CS351--ciAsst--ryanmf2/CS351--ciAsst--ryanmf2/src/test/java/edu/odu/cs/TestWordCounter.java">
+<error line="5" column="47" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="10" column="36" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.hamcrest.Matchers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/home/runner/work/CS351--ciAsst--ryanmf2/CS351--ciAsst--ryanmf2/src/test/java/edu/odu/cs/TestWordFilter.java">
+<error line="5" column="47" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.junit.jupiter.api.Assertions.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="7" column="36" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.hamcrest.Matchers.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+</checkstyle>
