@@ -2,6 +2,4 @@
 
 Ryan Funkhouser
 
-* [Tests](./reports/tests/test/)
-* [JavaDoc](./reports/javadoc/)
 * [Static analysis](./main.html)
